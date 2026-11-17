@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Page</title>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>My Website</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <hr>
+
+  <!-- Main Content & Form Section -->
+  <main>
+    <h2>User Registration Form</h2>
+    
+    <form action="/submit-data" method="POST">
+      <!-- Text Input -->
+      <div>
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <br>
+
+      <!-- Email Input -->
+      <div>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <br>
+
+      <!-- Password Input -->
+      <div>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <br>
+
+      <!-- Radio Buttons -->
+      <div>
+        <p>Gender:</p>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+      </div>
+      <br>
+
+      <!-- Dropdown Menu -->
+      <div>
+        <label for="role">Role:</label><br>
+        <select id="role" name="role">
+          <option value="student">Student</option>
+          <option value="developer">Developer</option>
+          <option value="designer">Designer</option>
+        </select>
+      </div>
+      <br>
+
+      <!-- Textarea -->
+      <div>
+        <label for="bio">Short Bio:</label><br>
+        <textarea id="bio" name="bio" rows="4" cols="30" placeholder="Tell us about yourself..."></textarea>
+      </div>
+      <br>
+
+      <!-- Checkbox -->
+      <div>
+        <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+        <label for="subscribe">Subscribe to newsletter</label>
+      </div>
+      <br>
+
+      <!-- Submit & Reset Buttons -->
+      <div>
+        <button type="submit">Register</button>
+        <button type="reset">Clear Form</button>
+      </div>
+    </form>
+  </main>
+
+</body>
+</html>
